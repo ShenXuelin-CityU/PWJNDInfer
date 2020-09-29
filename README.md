@@ -25,7 +25,7 @@ The code will be available soon.
 
 ## Citation
 
-If UEGAN is useful for your research, please cite our paper:
+If our work is useful for your research, please cite our paper:
 
 ```
 @article{ni2020towards,
