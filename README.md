@@ -38,6 +38,6 @@ If UEGAN is useful for your research, please cite our paper:
 
 ## Contact
 
-Thanks for your attention! If you have any suggestion or question, feel free to leave a message here or contact Zhangkai Ni (eezkni@gmail.com).
+Thanks for your attention! If you have any suggestion or question, feel free to leave a message here or contact Xuelin Shen (xuelishen2-c@my.cityu.edu.hk).
 
  
