@@ -14,13 +14,23 @@ In this paper, we propose an effective approach to infer the just noticeable dis
 We recommended the following dependencies.
 *  Python 3.6
 *  PyTorch 1.4.0
-*  tqdm 4.43.0
-*  munch 2.5.0
-*  torchvision 0.5.0
 
 
-## Training
-The code will be available soon.
+
+## Usage
+I am really sorry for the delay, the code has been uploaded now. For your usage, please follow the following steps: 
+
+1. Copy your test images to ‘./Test_images’
+
+2. Run 'Generate_testpatch.m' to crop your test images into patches;(Matlab Code)
+ 
+3. Run the learning based structural infer model (Pytorch)
+       a. Modify the 'test.csv' at folder ".\ structural _infer\data\" accoding to the number of generated patches
+       b. Usage: python main.py -- mode test 
+       c. The inferred patches will be at ".\ structural _infer\results\JND\test\"
+
+ 4. Run 'Patch_JND.m' to generate JND images and calculate PSNR
+
 
 
 ## Citation
@@ -28,11 +38,14 @@ The code will be available soon.
 If our work is useful for your research, please cite our paper:
 
 ```
-@article{ni2020towards,
-  title={Just Noticeable Distortion Profile Inference: A Patch-level Structural Visibility Learning Approach},
-  author={Xuelin Shen, Zhangkai Ni, Wenhan Yang, Xinfeng Zhang, Shiqi Wang,  and Sam Kwong},
-  booktitle={IEEE TIP},
-  year={2020}
+@article{shen2020just,
+  title={Just Noticeable Distortion Profile Inference: A Patch-Level Structural Visibility Learning Approach},
+  author={Shen, Xuelin and Ni, Zhangkai and Yang, Wenhan and Zhang, Xinfeng and Wang, Shiqi and Kwong, Sam},
+  journal={IEEE Transactions on Image Processing},
+  volume={30},
+  pages={26--38},
+  year={2020},
+  publisher={IEEE}
 }
 ```
 
