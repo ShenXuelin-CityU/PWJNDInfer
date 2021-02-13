@@ -25,8 +25,11 @@ I am really sorry for the delay, the code has been uploaded now. For your usage,
 2. Run 'Generate_testpatch.m' to crop your test images into patches;(Matlab Code)
  
 3. Run the learning based structural infer model (Pytorch)
+
        a. Modify the 'test.csv' at folder ".\ structural _infer\data\" accoding to the number of generated patches
+
        b. Usage: python main.py -- mode test 
+
        c. The inferred patches will be at ".\ structural _infer\results\JND\test\"
 
  4. Run 'Patch_JND.m' to generate JND images and calculate PSNR
