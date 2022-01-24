@@ -11,6 +11,10 @@ img_JND=zeros(floor(h/(patchsize-overlap))*(patchsize-overlap)+overlap,floor(w/(
 stas_p=zeros(1,Frame);
 img_jnd=cell(1,Frame);
 patch_each_frame=floor(h/(patchsize-overlap))*floor(w/(patchsize-overlap));
+%Ori_img name list
+ori_path_list = dir(strcat(ori_img_dir,'*.png'));
+ori_files_name =sort_nat({ori_path_list.name});
+
 for f=0:Frame-1
     sign=get_randi();
     for row=1:floor(h/(patchsize-overlap))
@@ -65,7 +69,8 @@ for f=0:Frame-1
     end
     out_name=strcat('.\JND',num2str(f),'.bmp');
     imwrite(uint8(img_JND),out_name,'bmp');
-    ori_name=strcat(ori_img_dir,'Croped',num2str(f),'.tif');
+    %ori_name=strcat(ori_img_dir,'Croped',num2str(f),'.png');
+    ori_name=strcat(ori_img_dir,ori_files_name{f+1});
     img_ori=rgb2gray(imread(ori_name));
     img_ori=img_ori(1:floor(h/(patchsize-overlap))*(patchsize-overlap)+overlap,1:floor(w/(patchsize-overlap))*(patchsize-overlap)+overlap);
     img_jnd{f+1}=uint8(img_JND);

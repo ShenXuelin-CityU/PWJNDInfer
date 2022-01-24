@@ -28,7 +28,7 @@ I am really sorry for the delay, the code has been uploaded now. For your usage,
 
        a. Modify the 'test.csv' at folder ".\ structural _infer\data\" accoding to the number of generated patches
 
-       b. Usage: python main.py -- mode test 
+       b. Usage: python main.py --mode test 
 
        c. The inferred patches will be at ".\ structural _infer\results\JND\test\"
 
